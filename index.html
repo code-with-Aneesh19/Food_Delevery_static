@@ -33,6 +33,30 @@
         <a href="#feature" class="btn btn-ghost">Show me More</a>
       </div>
     </header>
+    <!-- <header class="header">
+      <img src="./Resourse/img/mother_logo.jpg" alt="Logo" class="logo" />
+
+      
+      <a href="#" class="mobile-nav-icon js-nav-icon"> &#9776; </a>
+
+      <nav>
+        <ul class="main-nav js-main-nav">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#works">How it works</a></li>
+          <li><a href="#cities">Cities</a></li>
+          <li><a href="#plans">Sign up</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text-box">
+        <h1>
+          Goodbye Junk Food <br />
+          Hello super healthy food
+        </h1>
+        <a href="#plans" class="btn btn-full">I`m Hungry</a>
+        <a href="#feature" class="btn btn-ghost">Show me More</a>
+      </div>
+    </header> -->
+
     <section class="section-feactures" id="feature">
       <div class="row">
         <h2>Get Fast food - Not Fast food</h2>
@@ -554,6 +578,18 @@
           } // End if
         });
       });
+
+      document
+        .querySelector(".js-nav-icon")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          var nav = document.querySelector(".js-main-nav");
+          if (nav.style.display === "block") {
+            nav.style.display = "none";
+          } else {
+            nav.style.display = "block";
+          }
+        });
     </script>
   </body>
 </html>

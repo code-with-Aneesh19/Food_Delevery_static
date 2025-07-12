@@ -76,7 +76,9 @@
     margin: 0 0 4% 0;
 }
 .main-nav{
-    display: none;
+    /* display: none; */
+    display: grid;
+    margin: 15px;
 }
 .app-screen{
     width: 40%;
